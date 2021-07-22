@@ -1,0 +1,352 @@
+
+/* Init Tailwind */
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+/* Font Face */
+@font-face {
+  font-family: 'Avenir LT Std';
+  src: url('../fonts/AvenirLTStd-Black.eot');
+  src: url('../fonts/AvenirLTStd-Black.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/AvenirLTStd-Black.woff2') format('woff2'),
+      url('../fonts/AvenirLTStd-Black.woff') format('woff'),
+      url('../fonts/AvenirLTStd-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Avenir LT Std';
+  src: url('../fonts/AvenirLTStd-Roman.eot');
+  src: url('../fonts/AvenirLTStd-Roman.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/AvenirLTStd-Roman.woff2') format('woff2'),
+      url('../fonts/AvenirLTStd-Roman.woff') format('woff'),
+      url('../fonts/AvenirLTStd-Roman.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Avenir LT Std';
+  src: url('../fonts/AvenirLTStd-Book.eot');
+  src: url('../fonts/AvenirLTStd-Book.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/AvenirLTStd-Book.woff2') format('woff2'),
+      url('../fonts/AvenirLTStd-Book.woff') format('woff'),
+      url('../fonts/AvenirLTStd-Book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Filosofia';
+  src: url('../fonts/FilosofiaItalic.eot');
+  src: url('../fonts/FilosofiaItalic.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/FilosofiaItalic.woff2') format('woff2'),
+      url('../fonts/FilosofiaItalic.woff') format('woff'),
+      url('../fonts/FilosofiaItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Font Family */
+.font-avenir {
+  font-family: 'Avenir LT Std';
+}
+.font-filosofia {
+  font-family: 'Filosofia';
+}
+
+/* Headings */
+h1 {
+  font-size: 6.8rem;
+}
+
+/* Text Colors */
+.text-red {
+  color: #d4353b;
+}
+.text-gray {
+  color: #8d8d8d;
+}
+.text-gray-500 {
+  color: #6e6e6e;
+}
+.text-blue {
+  color: #85c5de;
+}
+.text-orange {
+  color: #ffb260;
+}
+.text-purple {
+  color: #b9a7d7;
+}
+
+.bg-red {
+  background-color: #d1242a;
+}
+.bg-blue {
+  background-color: #f9fbfd;
+}
+.bg-orange {
+  background-color: #fff6eb;
+}
+.bg-purple {
+  background-color: #fcfbfd;
+}
+
+/* Buttons */
+.btn {
+  border-radius: 50px;
+  padding: 11px 20px;
+  color: #fff;
+  width: 180px;
+  display: block;
+  text-align: center;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+.btn-blue {
+  background-color: #85c5de;
+}
+.btn-orange {
+  background-color: #ffb260;
+}
+.btn-purple {
+  background-color: #b9a7d7;
+}
+
+/* Default styling */
+html {
+  scroll-behavior: smooth;
+}
+
+nav li:hover {
+  background-color: #db5b5d;
+}
+
+/* Header */
+.sidebar-header {
+  font-family: 'Filosofia';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 170px;
+  height: auto;
+  color: #fff;
+  z-index: 2;
+  background-color: #d95c5e;
+  border-right: 1px solid rgba(235, 103, 103, 0.2);
+}
+.sidebar-header li.active {
+  background-color: #f5d5d5;
+}
+.sidebar-header li.active a {
+  color: #d02429;
+}
+
+/* Custom CSS */
+.bg-section {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+section {
+  position: relative;
+  overflow: hidden;
+}
+.welcome-section {
+  background: url('../images/leaf-desaturate.png') no-repeat;
+  background-size: 590px;
+  background-position: 0% 120%;
+}
+.welcome-content-box {
+  max-width: 450px;
+  margin: 0 0 0 auto;
+}
+.breath-section {
+  background: url('../images/cornflower.png') no-repeat;
+  background-size: 590px;
+  background-position: 85% 50%;
+}
+.bytes-section:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../images/goldenrod.png') no-repeat;
+  background-size: 590px;
+  background-position: 27% 68%;
+  transform: rotate(340deg);
+}
+.briefing-section {
+  background: url('../images/maarten-deckers.png') no-repeat;
+  background-size: 800px;
+  background-position: 100% 100%;
+  padding-bottom: 100px;
+}
+
+/* Hero section */
+.top-banner {
+  height: 250px;
+}
+.slider-height {
+  height: 460px;
+}
+.hero-section {
+  height: 460px;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+}
+.hero-section img {
+  width: 100%;
+  margin-top: -180px;
+}
+.hero-section .social-icons {
+  top: auto;
+  color: #d2272d;
+}
+.hero-section .container {
+  position: relative;
+}
+.hero-copy {
+  font-family: 'Filosofia';
+  max-width: 50%;
+  color: #d2272d;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  height: 100vh;
+  transform: translate(-30%, 8%);
+  font-size: 40px;
+}
+.scroll-down {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+.scroll-down img {
+  width: 45px;
+  margin: 0 auto;
+  position: relative;
+  padding: 12px;
+  background: white;
+  border-radius: 50px 50px 0px 0px;
+}
+.slider-dots {
+  margin-top: -60px;
+}
+
+/* Footer */
+footer {
+  background-color: #d1232a;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+footer .social-icons .fa {
+  font-size: 16px;
+}
+footer .social-icons .fa:hover {
+  opacity: 0.8;
+}
+.social-icons {
+  position: absolute;
+  right: 20px;
+  top: 36%;
+  bottom: 0;
+  margin: auto;
+  transform: translate(0%,-50%);
+}
+
+.social-icons li {
+  margin: 0 5px;
+}
+
+/* Media Queries */
+@media (min-width: 1024px) {  
+  .container {
+    max-width: 900px;
+  }
+}
+@media (max-width: 992px) {  
+  .hero-section img {
+    margin-top: 0;
+  }
+  .slider-height, .hero-section {
+    height: 330px;
+  }
+  .bytes-section:before {
+    background-position: 0% -50%;
+  }
+  .hero-copy {
+    font-size: 2rem;
+    top: -25px;
+  }
+}
+@media (max-width: 767px) {  
+  section br {
+    display: none;
+  }
+  header {
+    display: none;
+  }
+  h1 {
+    font-size: 5rem;
+  }
+  .welcome-section {
+    background-size: 400px;
+    background-position: 50% 270px;
+  }
+  .breath-section {
+    background-position: 20% 350px;
+  }
+  .bytes-section:before {
+    background-position: 90% -50%;
+  }
+  .briefing-section {
+    background-size: 450px;
+    background-position: 20% 100%;
+  }
+  footer .social-icons {
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .social-icons {
+    position: relative;
+    transform: none;
+    left: 0;
+    right: 0;
+  }
+  .hero-copy {
+    width: 100%;
+    transform: none;
+    top: 30px;
+    right: 30px;
+    font-size: 1.5rem;
+    line-height: normal;
+  }
+  .hero-section img {
+    margin-top: 0;
+  }
+  .slider-height, .hero-section {
+    height: 260px;
+  }
+  .scroll-down {
+    margin-top: -20px;
+  }
+}
