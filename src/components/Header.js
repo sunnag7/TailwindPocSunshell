@@ -1,10 +1,9 @@
 import React from 'react';
-import dailyInspirtations from '../images/banner-icons1.png';
-import liveEvents from '../images/banner-icons2.png';
-import ourStory from '../images/banner-icons3.png'
+import dailyInspirtations from '../img/banner-icons1.png';
+import liveEvents from '../img/banner-icons2.png';
+import ourStory from '../img/banner-icons3.png'
 
 class Header extends React.Component {
-
   render () {
     return(
       <header>
@@ -12,10 +11,10 @@ class Header extends React.Component {
           <nav className="sidebar-header">
             <ul>
               <li className="cursor-pointer top-banner bg-red mx-auto px-3 pt-8 pb-20 text-center">
-                <a href="#"><i class="fa fa-search fa-lg text-white"></i></a>
+                <a href="#"><i className="fa fa-search fa-lg text-white"></i></a>
               </li>
               <li className="border-t border-white-600 px-3 py-3 text-center active">
-                <a href="#welcome" onClick={this.ToggleMenu} className="text-white hover:text-white-500"><span className="block text-2xl font-medium leading-none">home</span></a>
+                <a href="#welcome" className="text-white hover:text-white-500"><span className="block text-2xl font-medium leading-none">home</span></a>
               </li>
               <li className="border-t border-white-600 px-3 py-3 text-center">
                 <a href="#breath" className="text-white hover:text-white-500"><span className="block text-2xl font-medium leading-none">breath</span> <small className=" text-sm leading-none">medication</small></a>
@@ -31,7 +30,7 @@ class Header extends React.Component {
               </li>
               <li className="border-t border-white-600 pt-4">
                 <div className="flex flex-col max-w-sm px-3 pb-1">
-                  <div className="flex flex-col md:flex-row gap-6 md:gap-8">
+                  <div className="flex flex-col md:flex-row">
                     <div className="mr-2">
                       <img src={dailyInspirtations} alt="daily inspirtations" width="56" />
                     </div>
@@ -42,7 +41,7 @@ class Header extends React.Component {
                 </div>
 
                 <div className="flex flex-col max-w-sm px-3 pb-1">
-                  <div className="flex flex-col md:flex-row gap-6 md:gap-8">
+                  <div className="flex flex-col md:flex-row">
                     <div className="mr-2">
                       <img src={liveEvents} alt="live events" width="44" />
                     </div>
@@ -53,7 +52,7 @@ class Header extends React.Component {
                 </div>
 
                 <div className="flex flex-col max-w-sm px-3 pb-1">
-                  <div className="flex flex-col md:flex-row gap-6 md:gap-8">
+                  <div className="flex flex-col md:flex-row">
                     <div className="mr-2">
                       <img src={ourStory} alt="our story" width="46" />
                     </div>
@@ -69,8 +68,6 @@ class Header extends React.Component {
       </header>
     )
   } 
-// note: you have to create a ref inside the constructor:
-divRef = React.createRef()
 }
 
 export default Header;

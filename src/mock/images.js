@@ -1,6 +1,6 @@
-import imageHeroBannerUrl1 from '../images/hero-banner1.jpg';
-import imageHeroBannerUrl2 from '../images/hero-banner3.jpg';
-import imageHeroBannerUrl3 from '../images/hero-banner4.jpg';
+import imageHeroBannerUrl1 from '../img/hero-banner1.jpg';
+import imageHeroBannerUrl2 from '../img/hero-banner3.jpg';
+import imageHeroBannerUrl3 from '../img/hero-banner4.jpg';
 
 const Images = [
   {

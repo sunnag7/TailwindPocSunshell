@@ -1,7 +1,7 @@
 import React, {  useEffect } from 'react';
 import Thumbnail from '../Thumbnail';
 import DotIcon from '../DotIcon';
-import arrowDown from '../../images/arrow-down.png';
+import arrowDown from '../../img/arrow-down.png';
 
 const Carousel = ({ children, time }) => {
   const [index, setIndex] = React.useState(0);
